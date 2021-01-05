@@ -8,7 +8,8 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const Notification = () => toast.dark('Bienvenido a FakeFlix!', { autoClose: 3000 });
+  const Notification = () =>
+    toast.dark('Bienvenido a FakeFlix! Por Jose Padilla 2020', { autoClose: 7000 });
 
   useEffect(() => {
     Notification();
@@ -31,7 +32,7 @@ function App() {
       <Row title='Romance' fetchUrl={requests.fetchRomanceMovies} />
       <Row title='Documentales' fetchUrl={requests.fetchDocumentaries} />
       <Fragment>
-        <ToastContainer />
+        <ToastContainer style={{ width: '375px' }} />
       </Fragment>
     </div>
   );
