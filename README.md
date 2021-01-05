@@ -1,3 +1,3 @@
 # FAKEFLIX
 
-Copia de netflix
+Copia de netflix utilizando React
