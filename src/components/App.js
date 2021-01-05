@@ -8,10 +8,11 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
-  const Notification = () => toast('message');
+  const Notification = () => toast.dark('Bienvenido a FakeFlix!', { autoClose: 3000 });
+
   useEffect(() => {
     Notification();
-  });
+  }, []);
 
   return (
     <div className='App'>
