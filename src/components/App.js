@@ -9,7 +9,9 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   const Notification = () =>
-    toast.dark('Bienvenido a FakeFlix! Por Jose Padilla 2020', { autoClose: 7000 });
+    toast.dark(`Bienvenido a FakeFlix! Por Jose Padilla ${new Date().getFullYear()}`, {
+      autoClose: 7000,
+    });
 
   useEffect(() => {
     Notification();
